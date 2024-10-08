@@ -5,26 +5,62 @@ body {
   background-color: white;
 }
 
-a {
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
+/* Обнулення дефолтних маржинів та лівого падіння для списків */
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-address {
-  font-style: normal;
+/* Зображення блочного елементу */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
   cursor: pointer;
 }
 
+/*common*/
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /*header*/
 .page-header {
-  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
 }
 
 .logo {
@@ -38,6 +74,7 @@ button {
 }
 
 .logo-header {
+  padding: 24px 0;
   margin-right: 76px;
 }
 
@@ -45,7 +82,15 @@ button {
   color: #2e2f42;
 }
 
+.navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .navigation-link {
+  padding: 24px 0;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -60,19 +105,46 @@ button {
   color: #404bbf;
 }
 
+address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .address-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
-/*main*/
-.conteiner {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-content {
   background-color: #2e2f42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  align-items: center;
 }
 
 .container-name {
+  display: inline-block;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -80,6 +152,9 @@ button {
   color: #fff;
   text-transform: capitalize;
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 292px;
+  max-width: 496px;
 }
 
 .btn-box {
@@ -89,6 +164,17 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  display: inline-block;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-radius: 4px;
+  border: none;
+  width: 169px;
+  height: 56px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-box:hover,
@@ -174,6 +260,7 @@ button {
 }
 
 /*footer*/
+
 .page-footer {
   background-color: #2e2f42;
 }
