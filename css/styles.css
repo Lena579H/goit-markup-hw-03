@@ -187,9 +187,11 @@ address {
   padding: 120px 0;
 }
 
+.content-item {
+  width: calc((100% - 72px) / 4);
+}
 .content-list {
   display: flex;
-  width: calc((100% - 72px) / 4);
   gap: 24px;
 }
 .content-name {
