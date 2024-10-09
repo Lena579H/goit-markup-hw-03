@@ -304,6 +304,9 @@ address {
   border-right: 1px solid #e5e5e5;
   row-gap: 48px;
 }
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
 
 .portfolio-pic {
   margin-bottom: 32px;
