@@ -247,6 +247,9 @@ address {
   margin-bottom: 32px;
 }
 
+.team-employee {
+  padding: 32px 0;
+}
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -264,7 +267,6 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  padding-bottom: 32px;
 }
 
 /*PORTFOLIO*/
